@@ -386,20 +386,20 @@ const Resume = () => {
             Download
           </Button>
           <div className="dropdown-content">
-            <a
+            <button
               href="#"
               // call handleGeneratePdf function here
               onClick={handleGeneratePdf}
             >
               PDF
-            </a>
-            <a
+            </button>
+            <button
               href="#"
               // call handleGeneratePng function here
               onClick={handleGeneratePng}
             >
               PNG
-            </a>
+            </button>
           </div>
         </div>
       </Box>
