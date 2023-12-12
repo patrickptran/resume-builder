@@ -7,7 +7,7 @@ import Step from "@mui/material/Step";
 import StepLabel from "@mui/material/StepLabel";
 
 import { useSelector, useDispatch } from "react-redux";
-import { jumpToStep } from "../features/stepper/stepperSlice";
+import { jumpsToStep } from "../features/stepper/stepperSlice";
 
 export default function MultiStepper() {
   const { steps, activeStep, header } = useSelector((store) => store.stepper);
@@ -47,7 +47,7 @@ export default function MultiStepper() {
 
             return (
               <Step
-                onClick={() => dispatch(jumpToStep(index))}
+                onClick={() => dispatch(jumpsToStep(index))}
                 key={label}
                 {...stepProps}
               >

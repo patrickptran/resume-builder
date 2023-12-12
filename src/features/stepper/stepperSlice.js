@@ -1,3 +1,4 @@
+// Task 1: Add stepper slice code here
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
@@ -39,7 +40,7 @@ const stepperSlice = createSlice({
   initialState,
   reducers: {
     nextStep: (state) => {
-      if (state.activeStep > state.steps.length - 1) {
+      if (state.activeStep < state.steps.length - 1) {
         state.prevStep = [...state.prevStep, state.activeStep];
         state.activeStep += 1;
       }
@@ -52,7 +53,7 @@ const stepperSlice = createSlice({
         state.activeStep -= 1;
       }
     },
-    jumpToStep: (state, { payload }) => {
+    jumpsToStep: (state, { payload }) => {
       if (state.prevStep.includes(payload)) {
         state.activeStep = payload;
       }
@@ -60,6 +61,6 @@ const stepperSlice = createSlice({
   },
 });
 
-export const { nextStep, jumpToStep, prevStep } = stepperSlice.actions;
+export const { nextStep, prevStep, jumpsToStep } = stepperSlice.actions;
 
 export default stepperSlice.reducer;

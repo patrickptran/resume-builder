@@ -1,10 +1,10 @@
 import React from "react";
-import "../css/style.css";
-import "../css/reset.css";
 import Button from "@mui/material/Button";
 import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
 import Cvtemplate from "../images/cv-template.svg";
 import Typography from "@mui/material/Typography";
+import "../css/style.css";
+import "../css/reset.css";
 
 const ShowTemplate = () => {
   return (

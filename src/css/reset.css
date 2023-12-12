@@ -1,6 +1,6 @@
 .css-sje21u-MuiInputBase-root-MuiInput-root:before,
 .css-sje21u-MuiInputBase-root-MuiInput-root:after {
-    border: 0 !important;
+    border: none !important;
 }
 
 .MuiAutocomplete-hasPopupIcon.css-1qqsdnr-MuiAutocomplete-root .MuiAutocomplete-inputRoot,

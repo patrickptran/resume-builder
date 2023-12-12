@@ -11,7 +11,7 @@ const InputField = ({ label, type, placeholder, name, id, formik, index }) => {
       {
         /* Input label component */ <InputLabel
           shrink
-          hmltFor={name}
+          hmltfor={name}
           className="text-input"
           sx={{ marginLeft: "1.5rem" }}
         >
