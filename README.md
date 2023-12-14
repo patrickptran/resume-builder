@@ -29,7 +29,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### Deployment
-[comment]: <> (This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment))
+### [Deployment](https://resume-builder-seven-chi.vercel.app/)
+
 
 
